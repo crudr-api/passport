@@ -1,6 +1,6 @@
 {
 	"name": "passport-crudr",
-	"version": "0.0.1",
+	"version": "0.1.0",
 	"description": "OAuth2 client authentication for CRUDr using passport.js",
 	"keywords": ["crudr", "passport", "oauth2", "auth", "authentication", "identity", "api", "json"],
 	"author": "kdi",
