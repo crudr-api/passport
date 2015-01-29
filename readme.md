@@ -1,6 +1,6 @@
 # Passport.js authentication for CRUDr
 
-[Passport](http://passportjs.org/) strategy for authenticating with [CRUDr](https://crudr.com/) using the OAuth 2.0 API.
+[Passport](http://passportjs.org/) strategy for authenticating with [CRUDr](http://crudr.com/) using the OAuth 2.0 API.
 
 This module lets you authenticate using CRUDr in your Node.js applications.
 
@@ -17,10 +17,12 @@ npm install passport-crudr
 
 The CRUDr authentication strategy authenticates users using a CRUDr account and OAuth 2.0 tokens.  The strategy requires a `verify` callback, which accepts these credentials and calls `done` providing a user, as well as `options` specifying a client ID, client secret, and callback URL.
 ```
-passport.use(new CRUDrOAuth2Strategy({
+var OAuth2Strategy = require("passport-crudr").Strategy;
+
+passport.use(new OAuth2Strategy({
 	clientID: CLIENT_ID,
 	clientSecret: CLIENT_SECRET,
-	callbackURL: "https://www.example.net/auth/crudr/callback"
+	callbackURL: "http://www.example.net/auth/crudr/callback"
 	},
 	function(accessToken, refreshToken, profile, done) {
 	User.findOrCreate({ providerId: profile.id }, function (err, user) {
