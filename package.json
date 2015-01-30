@@ -10,10 +10,10 @@
 	"homepage": "http://crudr.com",
 	"repository": {
 		"type": "git",
-		"url": "git://github.com/crudr-tools/passport.git"
+		"url": "git://github.com/crudr-api/passport.git"
 	},
 	"bugs": {
-		"url": "http://github.com/crudr-tools/passport/issues"
+		"url": "http://github.com/crudr-api/passport/issues"
 	},
 	"licenses": [{
 		"type": "MIT",
